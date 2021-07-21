@@ -1,1 +1,1 @@
-Este repositorio contem todas as atividades desenvolvidas por Gustavo Gracio enquanto estudaca na Trybe.
+Este repositorio contém todas as atividades desenvolvidas por Gustavo Gracio enquanto estudava na Trybe.
