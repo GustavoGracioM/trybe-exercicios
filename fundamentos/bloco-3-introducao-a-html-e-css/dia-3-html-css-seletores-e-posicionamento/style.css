@@ -1,0 +1,16 @@
+ol {
+    background-color: yellow;
+}
+
+ol li:nth-of-type(2n+1) {
+    text-transform:uppercase;
+}
+ol li:nth-of-type(2n) {
+    background-color: green;
+}
+h1, h2{
+    color: red;
+}
+li {
+    font-size: 20px;
+}
