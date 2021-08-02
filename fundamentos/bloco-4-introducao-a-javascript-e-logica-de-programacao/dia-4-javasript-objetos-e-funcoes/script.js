@@ -8,4 +8,6 @@ let info = {
 // Exercicio 1
 console.log("Bem vinda, " + info.personagem);
 
-
+// Exercicio 2
+info.recorrente = "Sim";
+console.log(info);
