@@ -9,3 +9,6 @@ let player = {
         silver:3
     }
 }
+
+//Exercicio 2
+console.log("A jogadora " + player.name + " " + player.lastName + " tem " + player.age + " anos de idade.");
