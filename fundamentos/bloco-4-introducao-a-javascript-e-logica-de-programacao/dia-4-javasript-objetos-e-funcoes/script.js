@@ -36,7 +36,18 @@ for(let key in info){
     }else{
         console.log(info[key] + " e " + secondeInfo[key]);
     }
-
 }
+
+// Exercicios sobre Funções
+// Exercicio 1
+function palindromo(string){
+    if (string === string.split("").reverse().join("")){
+        resultado = true;
+    }else {
+        resultado = false;
+    }
+    return console.log(resultado);
+}
+palindromo("ovo");
 
 
