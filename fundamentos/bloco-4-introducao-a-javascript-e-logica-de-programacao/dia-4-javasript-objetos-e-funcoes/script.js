@@ -44,3 +44,12 @@ let car = {
 for (let key in car){
     console.log(key, car[key]);
 }
+
+
+//Exercicio Sobre Funções 
+// Exercicio 1
+function soma(a, b){
+    let resultado = a + b;
+    return console.log(resultado);
+}
+soma(10,5);
