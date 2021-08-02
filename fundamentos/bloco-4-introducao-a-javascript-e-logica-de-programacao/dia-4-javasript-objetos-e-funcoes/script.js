@@ -53,3 +53,32 @@ function soma(a, b){
     return console.log(resultado);
 }
 soma(10,5);
+
+//Exercicio 2
+function subtracao(a, b){
+    let resultado = a - b;
+    return console.log(resultado);
+}
+subtracao(10,5);
+
+//Exercicio 3
+function multiplicacao(a, b){
+    let resultado = a * b;
+    return console.log(resultado);
+}
+multiplicacao(10,5);
+
+//Exercico 4
+function divisao(a, b){
+    let resultado = a / b;
+    return console.log(resultado);
+}
+divisao(10,5);
+
+//Exercicio 5
+function modulo(a, b){
+    let resultado = a % b;
+    return console.log(resultado);
+}
+modulo(10,5);
+
