@@ -1,4 +1,4 @@
-//Para Fixar
+//Para Fixar Parte I
 //Exercicio 1
 let player = {
     name: 'Marta',
@@ -20,4 +20,16 @@ player['bestInTheWorld'] = [2006, 2007, 2008, 2009, 2010, 2018];
 console.log("A jogadora " + player.name + " " + player.lastName + " foi eleita a melhor do mundo " + player.bestInTheWorld.length + " vezes.");
 
 //Exercico 5
-console.log("A jogadora possui " + player.medals.golden + " medalhas de ouro e " + player.medals.silver + " medalhas de prata.")
+console.log("A jogadora possui " + player.medals.golden + " medalhas de ouro e " + player.medals.silver + " medalhas de prata.");
+
+//Para Fixar Parte II
+//Exercicio 1
+let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge' 
+  };
+
+for (let key in names){
+    console.log("Olá, " + names[key]);
+}
