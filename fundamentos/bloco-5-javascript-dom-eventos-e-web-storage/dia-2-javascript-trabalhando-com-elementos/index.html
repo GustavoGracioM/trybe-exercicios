@@ -135,7 +135,17 @@
         posicaoSecitionRight.style.marginRight = 'auto';
 
         // Exercicio 5
-        posicaoSection.style.backgroundColor = '#036B52'
+        posicaoSection.style.backgroundColor = '#036B52';
+
+        // Exercicio 6
+        let posicaoLi = document.querySelectorAll('li');
+        
+        for( let key = 0; key < posicaoLi.length; key += 1) {
+            let info = posicaoLi[key];
+            if (info.innerText.includes('nove') || info.innerText.includes('dez')  ) {
+                posicaoUl.removeChild(info);
+            }
+        }
     </script>
   </body>
 </html>
