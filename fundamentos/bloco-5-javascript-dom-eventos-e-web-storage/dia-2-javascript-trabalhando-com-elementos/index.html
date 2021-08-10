@@ -97,6 +97,20 @@
         newElement7.src = 'https://picsum.photos/200';
         newElement7.classList.add('small-image');
         posicaoSecitionLeft.appendChild(newElement7);
+
+        // Exercicio 8
+        let posicaoSecitionRight = document.getElementsByClassName('right-content')[0];
+        let newElement8 = document.createElement('ul');
+        posicaoSecitionRight.appendChild(newElement8);
+
+        let posicaoUl = document.getElementsByTagName('ul')[0];   
+        let numbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        for (let key = 0; key < numbers.length; key += 1) {
+            let elementLi = document.createElement('li');
+            elementLi.innerText = numbers[key];
+            posicaoUl.appendChild(elementLi);
+        }
     </script>
   </body>
 </html>
