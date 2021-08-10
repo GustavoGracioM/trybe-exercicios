@@ -59,15 +59,21 @@
     <script>
         // COLOQUE SEU CÓDIGO AQUI
         // Exercicio 1
-        let posicao = document.getElementsByTagName('body')[0];
+        let posicaoBody = document.getElementsByTagName('body')[0];
         let newElement1 = document.createElement('h1');
         newElement1.innerText = 'Parte 1';
-        posicao.appendChild(newElement1);
+        posicaoBody.appendChild(newElement1);
 
         // Exercicio 2
         let newElement2 = document.createElement('main');
         newElement2.classList.add('main-content');
-        posicao.appendChild(newElement2);
+        posicaoBody.appendChild(newElement2);
+
+        // Exercicio 3
+        let posicaoMain = document.getElementsByClassName('main-content')[0];
+        let newElement3 = document.createElement('section');
+        newElement3.classList.add('center-content');
+        posicaoMain.appendChild(newElement3);
     </script>
   </body>
 </html>
