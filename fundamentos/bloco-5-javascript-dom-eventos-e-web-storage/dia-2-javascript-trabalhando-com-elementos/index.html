@@ -56,15 +56,18 @@
     </style>
   </head>
   <body>
-      <br>
-      lhaklhsd
     <script>
         // COLOQUE SEU CÓDIGO AQUI
         // Exercicio 1
-        let posicao1 = document.getElementsByTagName('body')[0];
+        let posicao = document.getElementsByTagName('body')[0];
         let newElement1 = document.createElement('h1');
         newElement1.innerText = 'Parte 1';
-        posicao1.appendChild(newElement1);
+        posicao.appendChild(newElement1);
+
+        // Exercicio 2
+        let newElement2 = document.createElement('main');
+        newElement2.classList.add('main-content');
+        posicao.appendChild(newElement2);
     </script>
   </body>
 </html>
