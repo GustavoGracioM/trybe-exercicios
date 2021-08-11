@@ -39,3 +39,29 @@ function createButton(Feriados) {
     buttonsContainer.appendChild(button)
 }
 createButton('Feriados');
+
+// Exercicio 3
+let buttonCreate = document.getElementById('btn-holiday');
+
+buttonCreate.addEventListener('click', holiday);
+
+let backgroondCalend = document.querySelectorAll('.holiday');
+let contador = 0;
+function holiday(event) {
+    if (contador === 0) {
+        for (let key = 0; key < backgroondCalend.length; key += 1) {
+            let value = backgroondCalend[key];
+            // console.log(value)
+            value.style.color = 'red';
+            console.log(contador = 1);
+        }
+    }else {
+        for (let key = 0; key < backgroondCalend.length; key += 1) {
+            let value = backgroondCalend[key];
+            // console.log(value)
+            value.style.color = '#777';
+            console.log(contador = 0);
+            
+        }
+    }
+}
