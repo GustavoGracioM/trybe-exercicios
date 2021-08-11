@@ -23,7 +23,8 @@ for (let key = 0; key < dezDaysList.length; key += 1) {
     valueLi.className = 'day';
     if (dezDaysList[key] === 24 || dezDaysList[key] === 25 || dezDaysList[key] === 31) {
         valueLi.className += ' holiday';
-    } else if (dezDaysList[key] === 4 || dezDaysList[key] === 11 || dezDaysList[key] === 18 || dezDaysList[key] === 25) {
+    }
+    if (dezDaysList[key] === 4 || dezDaysList[key] === 11 || dezDaysList[key] === 18 || dezDaysList[key] === 25) {
         valueLi.className += ' friday';
     }
     valueLi.innerText = dezDaysList[key];
@@ -47,20 +48,18 @@ buttonCreate.addEventListener('click', holiday);
 
 let backgroondCalend = document.querySelectorAll('.holiday');
 let contador = 0;
-function holiday(event) {
+function holiday() {
     if (contador === 0) {
         for (let key = 0; key < backgroondCalend.length; key += 1) {
             let value = backgroondCalend[key];
-            // console.log(value)
             value.style.color = 'red';
-            console.log(contador = 1);
+            contador = 1;
         }
     }else {
         for (let key = 0; key < backgroondCalend.length; key += 1) {
             let value = backgroondCalend[key];
-            // console.log(value)
             value.style.color = '#777';
-            console.log(contador = 0);
+            contador = 0;
             
         }
     }
@@ -74,3 +73,32 @@ function createButtonFriday(Feriados) {
     buttonsContainer.appendChild(button)
 }
 createButtonFriday('Sexta-feira');
+
+// Exercicio 5
+let buttonCreateFriday = document.getElementById('btn-friday');
+buttonCreateFriday.addEventListener('click', friday);
+let backgroondFriday = document.querySelectorAll('.friday');
+let contador1 = 0;
+function reutilizar() {
+    let array = [];
+    for (let key = 0; key < backgroondFriday.length; key += 1) {
+        array.push(backgroondFriday[key].innerText);
+    }
+    return array
+}
+let array = reutilizar();
+function friday() { 
+    if (contador1 === 1) {
+        for (let key = 0; key < backgroondFriday.length; key += 1) {
+            let value = backgroondFriday[key];
+            value.innerText = array[key];
+            contador1 = 0;
+        }
+    }else {
+        for (let key = 0; key < backgroondFriday.length; key += 1) {
+            let value = backgroondFriday[key];
+            value.innerText = 'SEXTA';
+            contador1 = 1;
+        }
+    }
+}
