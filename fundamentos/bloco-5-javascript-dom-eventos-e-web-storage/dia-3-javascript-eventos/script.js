@@ -65,3 +65,12 @@ function holiday(event) {
         }
     }
 }
+
+// Exercicio 4
+function createButtonFriday(Feriados) {
+    let button = document.createElement('button');
+    button.id = 'btn-friday';
+    button.innerText = Feriados;
+    buttonsContainer.appendChild(button)
+}
+createButtonFriday('Sexta-feira');
