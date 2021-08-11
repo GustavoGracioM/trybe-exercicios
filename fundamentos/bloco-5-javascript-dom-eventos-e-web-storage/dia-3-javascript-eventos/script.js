@@ -29,3 +29,13 @@ for (let key = 0; key < dezDaysList.length; key += 1) {
     valueLi.innerText = dezDaysList[key];
     daysLi.appendChild(valueLi);
 }
+
+// Exercicio 2
+let buttonsContainer = document.querySelector('.buttons-container');
+function createButton(Feriados) {
+    let button = document.createElement('button');
+    button.id = 'btn-holiday';
+    button.innerText = Feriados;
+    buttonsContainer.appendChild(button)
+}
+createButton('Feriados');
