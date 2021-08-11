@@ -21,6 +21,11 @@ let daysLi = document.getElementById('days');
 for (let key = 0; key < dezDaysList.length; key += 1) {
     let valueLi = document.createElement('li');
     valueLi.className = 'day';
+    if (dezDaysList[key] === 24 || dezDaysList[key] === 25 || dezDaysList[key] === 31) {
+        valueLi.className += ' holiday';
+    } else if (dezDaysList[key] === 4 || dezDaysList[key] === 11 || dezDaysList[key] === 18 || dezDaysList[key] === 25) {
+        valueLi.className += ' friday';
+    }
     valueLi.innerText = dezDaysList[key];
     daysLi.appendChild(valueLi);
 }
