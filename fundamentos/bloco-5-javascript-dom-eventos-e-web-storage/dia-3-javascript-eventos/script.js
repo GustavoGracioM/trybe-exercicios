@@ -108,14 +108,22 @@ let elementLi = document.querySelectorAll('.day');
     for (let key = 0; key < elementLi.length; key += 1) {
         elementLi[key].addEventListener('mouseenter', function() {
             console.log(elementLi[key])
-            elementLi[key].style.backgroundColor = 'green';
-            elementLi[key].style.color = 'white';
+
+            // elementLi[key].style.backgroundColor = 'green';
+            // elementLi[key].style.color = 'white';
+            elementLi[key].style.visibility = 'visible';
         });
         elementLi[key].addEventListener('mouseout', function() {
-            elementLi[key].style.backgroundColor = 'white';
-            elementLi[key].style.color = '#777';
+        //     elementLi[key].style.backgroundColor = '#eee';
+        //     elementLi[key].style.color = '#777';
         })
     }
 
-
-    
+// Exercicio 7
+let cozinhar = document.querySelector('.my-tasks');
+function cozinharFunction(string) {
+    let span = document.createElement('span');
+    span.innerText = string;
+    cozinhar.appendChild(span);
+}
+cozinharFunction('cozinhar');
