@@ -127,3 +127,14 @@ function cozinharFunction(string) {
     cozinhar.appendChild(span);
 }
 cozinharFunction('cozinhar');
+
+// Exercicio 8
+function taskColor(cor) {
+    let tasks = document.querySelector('.my-tasks');
+    let colorTask = document.createElement('div');
+  
+    colorTask.className = 'task';
+    colorTask.style.backgroundColor = cor;
+    tasks.appendChild(colorTask);
+}
+taskColor('green');
