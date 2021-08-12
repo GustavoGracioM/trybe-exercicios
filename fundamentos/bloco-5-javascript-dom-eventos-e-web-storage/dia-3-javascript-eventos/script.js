@@ -106,16 +106,15 @@ function friday() {
 // Exercicio 6
 let elementLi = document.querySelectorAll('.day');
     for (let key = 0; key < elementLi.length; key += 1) {
-        elementLi[key].addEventListener('mouseenter', function() {
+        elementLi[key].addEventListener('mouseenter', function(event) {
             console.log(elementLi[key])
 
-            // elementLi[key].style.backgroundColor = 'green';
-            // elementLi[key].style.color = 'white';
-            elementLi[key].style.visibility = 'visible';
+            event.target.style.fontSize = '25px';
+            event.target.style.fontWeight = '550';
         });
-        elementLi[key].addEventListener('mouseout', function() {
-        //     elementLi[key].style.backgroundColor = '#eee';
-        //     elementLi[key].style.color = '#777';
+        elementLi[key].addEventListener('mouseout', function(event) {
+            event.target.style.fontWeight = '150';
+            event.target.style.fontSize = '20px';
         })
     }
 
@@ -138,3 +137,41 @@ function taskColor(cor) {
     tasks.appendChild(colorTask);
 }
 taskColor('green');
+
+// Exercicio 9
+function selectedTask() {
+    let selected = document.getElementsByClassName('task selected');
+    let myTasks = document.querySelector('.task');
+    
+    myTasks.addEventListener('click', function(event) {
+        console.log(selected.length);
+      if (selected.length === 0) {
+          
+        event.target.className = 'task selected';
+      } else {
+        event.target.className = 'task';
+      }
+    });
+  };
+  
+  selectedTask();
+
+// Exercicio 10
+function setDayColor() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let days = document.querySelector('#days');
+    let taskDiv = document.querySelector('.task');
+    let taskColor = taskDiv.style.backgroundColor;
+    
+    days.addEventListener('click', function(event){
+      let eventTargetColor = event.target.style.color;
+      if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+        let color = selectedTask[0].style.backgroundColor;
+        event.target.style.color = color;
+      } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+        event.target.style.color = 'rgb(119,119,119)';
+      }
+    });
+  };
+  
+  setDayColor();
