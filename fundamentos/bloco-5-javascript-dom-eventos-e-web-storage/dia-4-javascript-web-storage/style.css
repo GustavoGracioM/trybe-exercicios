@@ -7,6 +7,23 @@ body {
     border-bottom: 1px solid black;
     width: 100%;
     text-align: center;
-    
-    
+    margin-bottom: 30px;
+}
+
+.section-left {
+    float: left;
+    width: 45%;
+    margin-left: 30px;
+    margin-bottom: 43px;
+}
+
+.section-right {
+    float: right;
+    width: 45%;
+    margin-right: 30px;
+    margin-bottom: 70px;
+}
+
+.footer {
+    text-align: center;
 }
