@@ -102,3 +102,20 @@ function friday() {
         }
     }
 }
+
+// Exercicio 6
+let elementLi = document.querySelectorAll('.day');
+    for (let key = 0; key < elementLi.length; key += 1) {
+        elementLi[key].addEventListener('mouseenter', function() {
+            console.log(elementLi[key])
+            elementLi[key].style.backgroundColor = 'green';
+            elementLi[key].style.color = 'white';
+        });
+        elementLi[key].addEventListener('mouseout', function() {
+            elementLi[key].style.backgroundColor = 'white';
+            elementLi[key].style.color = '#777';
+        })
+    }
+
+
+    
