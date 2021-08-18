@@ -29,6 +29,20 @@ function mostrarResultado() {
     }
 }
 
+function limpar() {
+    const buttonClean = document.querySelector('.button-clean');
+    const resultado = document.querySelector('.resultado');
+    const inputs = document.querySelectorAll('input');
+    const textarea = document.querySelector('textarea');
+    buttonClean.addEventListener('click', () => {
+        for(let key = 0; key < inputs.length; key += 1) {
+            inputs[key].value = '';
+        }
+        textarea.value = '';
+        resultado.remove();
+    })
+}
+limpar();
 function required(){
     const inputs = document.querySelectorAll('input');
     for(let key = 0; key < inputs.length; key += 1) {
@@ -38,6 +52,7 @@ function required(){
     }
     verificarData();
     mostrarResultado();
+    limpar();
 }
 
 function defaultButton(event) {
