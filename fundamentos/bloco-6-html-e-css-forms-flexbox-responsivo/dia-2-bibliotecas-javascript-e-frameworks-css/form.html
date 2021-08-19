@@ -5,43 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+
     <title>Bloco 6</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container text-center mb-5">
         <h1>Formulario</h1>
     </header>
     <section class="container">
         <form class="form-floating">
-            <fieldset>
-                <div>
-                    <label for="input-nome">Nome:
+                <div class="mb-3">
+                    <label class="form-label" for="input-nome">Nome:
                         <input class="form-control" type="text" name='nome' id='input-nome' maxlength="40" >
                     </label>
                 </div>
-                <div>
-                    <label for="input-email">Email:
+                <div class="mb-3">
+                    <label class="form-label" for="input-email">Email:
                         <input class="form-control" type="text" name='email' id='input-email' maxlength="50" >
                     </label>
                 </div>
-                <div>
-                    <label for="input-cpf">CPF:
+                <div class="mb-3">
+                    <label class="form-label" for="input-cpf">CPF:
                         <input class="form-control" type="text" name='cpf' id='input-cpf' maxlength="11" >
                     </label>
                 </div>
-                <div>
-                    <label for="input-endereco">Endereço:
+                <div class="mb-3">
+                    <label class="form-label" for="input-endereco">Endereço:
                         <input class="form-control" type="text" name='endereco' id='input-endereco' maxlength="200" >
                     </label>
                 </div>
-                <div>
-                    <label for="input-cidade">Cidade:
+                <div class="mb-3">
+                    <label class="form-label" for="input-cidade">Cidade:
                         <input class="form-control" type="text" name='cidade' id='input-cidade' maxlength="28">
                     </label>
                 </div>
-                <div>
-                    <label for="input-nome">Estado:
+                <div class="mb-3">
+                    <label class="form-label" for="input-nome">Estado:
                         <select class="form-select" name="estado" id="estados">
                         <option value="ac">Acre</option>
                         <option value="al">Alagoas</option>
@@ -74,26 +78,24 @@
             
                     </label>
                 </div>
-            </fieldset>
     </section>
     <section class="container">
-            <fieldset>
-                <div> 
+                <div class="mb-3"> 
                     <p>Curriculo:</p> 
                     <textarea class="form-control"  name="curriculo" id="textarea-curriculo" cols="30" rows="10" maxlength="1000"></textarea> 
                 </div>
-                <div>
-                    <label for="input-cargo">Cargo:
+                <div class="mb-3">
+                    <label class="form-label" for="input-cargo">Cargo:
                         <input class="form-control" type="text" name='cargo' id='input-cargo' maxlength="40" >
                     </label>
                 </div>
-                <div>
-                    <label for="input-descricao-do-cargo">Descricao do Cargo:
+                <div class="mb-3">
+                    <label class="form-label" for="input-descricao-do-cargo">Descricao do Cargo:
                         <input class="form-control" type="text" name='descricao-do-cargo' id='input-descricao-do-cargo' maxlength="500" >
                     </label>
                 </div>
-                <div>
-                    <label for="input-data">Data de Inicio:
+                <div class="mb-3">
+                    <label class="form-label" for="input-data">Data de Inicio:
                         <input class="form-control" type="text" name='data' id='input-data' maxlength="40" >
                     </label>
                 </div>
@@ -101,8 +103,6 @@
             <button  class="btn btn-success" type='submit' id='button-form'>Enviar</button>
         </form>
         <button class="btn btn-success button-clean">Limpar</button>
-    </section>
-
     <div class="resultado"></div>
     <script src="script.js"></script>
     <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>

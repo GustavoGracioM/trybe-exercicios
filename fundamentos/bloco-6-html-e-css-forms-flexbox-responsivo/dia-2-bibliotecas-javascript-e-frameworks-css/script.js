@@ -1,23 +1,4 @@
-function verificarData() {
-    const data = document.getElementById('input-data');
-    const teste = /^\d\d\/\d\d\/\d\d\d\d$/;
-    if(!teste.test(data.value)){
-        alert('Formato incorreto');
-    }else{
-        const dia = parseInt(data.value[0] + data.value[1]);
-        const mes = parseInt(data.value[3] + data.value[4])
-        const ano = parseInt(data.value[6] + data.value[7] + data.value[8] + data.value[9]);
-        if(dia < 0 || dia > 31) {
-            alert('Dia invalido');
-        }
-        if(mes < 0 || mes > 12) {
-            alert('Mes Invalido');
-        }
-        if(ano < 0){
-            alert ('Ano invalido');
-        }
-    }
-}
+const date = document.getElementById('input-data').DatePickerX.init();
 
 function mostrarResultado() {
     const resultado = document.querySelector('.resultado');
@@ -50,7 +31,6 @@ function required(){
             return alert('Preencha todos os campos');
         }
     }
-    verificarData();
     mostrarResultado();
     limpar();
 }
