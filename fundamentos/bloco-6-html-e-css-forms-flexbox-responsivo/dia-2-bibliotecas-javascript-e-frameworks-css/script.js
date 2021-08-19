@@ -3,11 +3,12 @@ const date = document.getElementById('input-data').DatePickerX.init();
 function mostrarResultado() {
     const resultado = document.querySelector('.resultado');
     const inputs = document.querySelectorAll('input');
-    for(let key = 0; key < inputs.length; key += 1) {
-        const p = document.createElement('p');
-        p.innerText = inputs[key].value;
-        resultado.appendChild(p);
-    }
+        for(let key = 0; key < inputs.length; key += 1) {
+            const p = document.createElement('p');
+            p.innerText = inputs[key].value;
+            resultado.appendChild(p);
+        }
+
 }
 
 function limpar() {
@@ -24,20 +25,11 @@ function limpar() {
     })
 }
 limpar();
-function required(){
-    const inputs = document.querySelectorAll('input');
-    for(let key = 0; key < inputs.length; key += 1) {
-        if(inputs[key].value.length <= 0){
-            return alert('Preencha todos os campos');
-        }
-    }
-    mostrarResultado();
-    limpar();
-}
 
 function defaultButton(event) {
     event.preventDefault();
-    required();
+    mostrarResultado();
+    limpar();
 }
 
 function form() {
@@ -45,3 +37,33 @@ function form() {
     buttonForm.addEventListener('click',defaultButton);
 }
 form();
+
+const validacao = new window.JustValidate('form');
+
+new window.JustValidate('form', {
+    rules: {
+        text1: {
+            required: true
+        },
+        text2: {
+            required: true
+        },
+        text3: {
+            required: true
+        },
+        text4: {
+            required: true
+        },
+        text5: {
+            required: true
+        },
+        text6: {
+            required: true
+        },
+        text7: {
+            required: true
+        }
+    }
+    }
+    );
+
