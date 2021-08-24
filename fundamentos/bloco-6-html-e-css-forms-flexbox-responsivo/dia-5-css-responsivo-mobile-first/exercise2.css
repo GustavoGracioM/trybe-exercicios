@@ -31,6 +31,12 @@ li {
     list-style: none;
 }
 
+.info-contanier {
+    display: flex;
+    justify-content: space-around;
+    
+}   
+
 footer {
     margin-bottom: 30px;
 }
@@ -38,6 +44,19 @@ footer {
 @media screen and (max-width: 600px) {
     body {
         max-width: 600px;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    h3{
+        font-size: 18;
+    }
+    .info-contanier {
+        flex-direction: column;
     }
     aside, article, footer {
         padding: 0 15px;
@@ -53,6 +72,37 @@ footer {
     .main-content h1 {
         font-size: 25px;
     }
-
 }
+
+@media screen and (min-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 0 10px;
+    }
+    aside, article, footer {
+        padding: 0 40px;
+    }
+}
+
 
