@@ -18,3 +18,28 @@ figure {
     margin: 0;
     margin-bottom: 60px;
 }
+
+
+@media screen and  (min-width: 800px) {
+    body{
+        background-color: aqua;
+        font-size: 25px;
+        margin: 30px;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;  
+        width: 1000px;
+    }
+    main h2 {
+        margin-left: 350px;
+        margin-right: 300px;
+        text-align: center;
+        /* flex-direction: column; */
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
