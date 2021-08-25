@@ -86,3 +86,40 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+        max-width: 600px;
+        width: 100%;
+    }
+    #header{
+        position: fixed;
+        left: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 35px;
+    }
+    #aside {
+        display: none;
+    }
+    #navigation {
+        margin-top: 75px;
+    }
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #navigation ul li a {
+        border-right: none;
+    }
+    #content-container {
+        float: none;
+    }
+    #content img {
+        max-width: 100%;
+    }
+    #content {
+        width: 100%;
+      }
+}
