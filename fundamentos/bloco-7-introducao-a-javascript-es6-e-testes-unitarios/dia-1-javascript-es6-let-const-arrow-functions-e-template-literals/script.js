@@ -14,4 +14,16 @@ testingScope(true);
 // Exercicio 2
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 // Seu código aqui.
-console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente!`);
+
+// Exercicio 1 parte 2
+const fatorial = number => { 
+  let value = 0;
+  for (let key = (number - 1); key  >= 1; key -= 1) {
+    let valueFatorial =  number * key;
+    value += valueFatorial;
+  } 
+  console.log(value);
+};
+
+fatorial(4);
