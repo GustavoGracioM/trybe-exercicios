@@ -1,3 +1,4 @@
+// Exercicio 1 
 const testingScope = escopo => {
     if (escopo === true) {
       let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -9,3 +10,8 @@ const testingScope = escopo => {
   }
 }
 testingScope(true);
+
+// Exercicio 2
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// Seu código aqui.
+console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
