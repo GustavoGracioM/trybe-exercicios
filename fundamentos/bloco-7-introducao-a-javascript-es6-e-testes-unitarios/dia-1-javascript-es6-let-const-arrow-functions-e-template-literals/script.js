@@ -40,5 +40,17 @@ const maioPalavra = string => {
   }
   return console.log(value);
 };
-
 maioPalavra('Gustavo Gracio');
+
+// Exercicio 3
+const buttonClick = () => {
+  const button = document.getElementById('button');
+  const p = document.getElementById('count');
+  let clickCount = 0;
+  button.addEventListener('click', () => {
+    clickCount += 1;
+    console.log(clickCount);
+    p.innerText = clickCount;
+  })
+};
+buttonClick();
