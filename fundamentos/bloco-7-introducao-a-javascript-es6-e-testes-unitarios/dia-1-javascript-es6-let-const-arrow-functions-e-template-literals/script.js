@@ -54,3 +54,19 @@ const buttonClick = () => {
   })
 };
 buttonClick();
+
+// Exercicio 4
+const mudarPalavara = string => {
+  const stringQualquer = 'Tryber x aqui!';
+  const value = stringQualquer.replace('x', string);
+  return value;
+}
+
+const skills = ['HTML',' CSS', ' Javascript', ' PHP', ' React'];
+const templateLiterals = (valuePalavra) => {
+  const array = skills.sort((a, b) => a - b);
+  return console.log(`${valuePalavra} Minhas cinco principais habilidades são:
+  ${array}
+  #goTrybe".`);
+}
+templateLiterals(mudarPalavara('é'));
