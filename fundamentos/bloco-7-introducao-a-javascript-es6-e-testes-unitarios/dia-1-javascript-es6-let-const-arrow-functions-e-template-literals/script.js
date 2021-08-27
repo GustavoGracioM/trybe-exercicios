@@ -27,3 +27,18 @@ const fatorial = number => {
 };
 
 fatorial(4);
+
+const maioPalavra = string => {
+  let palavras = string.split(' ');
+  let max = 0;
+  let value = '';
+  for (const palavra of palavras) {
+    if (palavra.length > max) {
+      max = palavra.length;
+      value = palavra;
+    }
+  }
+  return console.log(value);
+};
+
+maioPalavra('Gustavo Gracio');
