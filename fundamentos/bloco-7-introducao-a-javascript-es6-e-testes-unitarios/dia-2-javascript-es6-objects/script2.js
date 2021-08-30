@@ -31,3 +31,7 @@ listarKeys(lesson1);
 // Exercicio 3
 const tamanhoObjeto = objeto => console.log(Object.keys(objeto).length);
 tamanhoObjeto(lesson3);
+
+// Exercicio 4
+const listarValores = objeto => console.log(Object.values(objeto));
+listarValores(lesson1);
