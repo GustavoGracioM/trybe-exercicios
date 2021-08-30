@@ -39,3 +39,14 @@ listarValores(lesson1);
 // Exercicio 5
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 console.log(allLessons);
+
+// Exercicio 6
+const totalEstudantes = objeto => {
+  let result = 0;
+  for (let key in objeto) {
+    const lesson = key;
+    result += objeto[lesson].numeroEstudantes;
+  }
+  console.log(result);
+};
+totalEstudantes(allLessons);
