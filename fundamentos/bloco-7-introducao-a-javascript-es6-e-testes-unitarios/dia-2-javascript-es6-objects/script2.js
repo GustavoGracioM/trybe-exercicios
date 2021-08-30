@@ -35,3 +35,7 @@ tamanhoObjeto(lesson3);
 // Exercicio 4
 const listarValores = objeto => console.log(Object.values(objeto));
 listarValores(lesson1);
+
+// Exercicio 5
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+console.log(allLessons);
