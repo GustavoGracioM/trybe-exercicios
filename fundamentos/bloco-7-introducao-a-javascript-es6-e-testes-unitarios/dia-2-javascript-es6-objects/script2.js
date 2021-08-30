@@ -22,3 +22,6 @@ const mudarTurno = (objeto, turno, valor) => {
   objeto.turno = valor;
 }
 mudarTurno(lesson2, 'turno', 'manhã');
+
+const listarKeys = objeto => console.log(Object.keys(objeto));
+listarKeys(lesson1);
