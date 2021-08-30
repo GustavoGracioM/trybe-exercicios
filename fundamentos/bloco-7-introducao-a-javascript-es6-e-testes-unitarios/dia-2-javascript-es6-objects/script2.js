@@ -58,3 +58,16 @@ const valorChave = (objeto, posicao) => {
 };
 
 valorChave(lesson1, 0);
+
+// Exercicio 8
+const verficar = (objeto, chave, valor) => {
+  const value = Object.values(objeto);
+  const keys = Object.keys(objeto);
+  for (let key = 0; key < value.length; key += 1) {
+    if (chave === keys[key] && valor === value[key]) {
+      return true;
+    }
+  }
+  return false;
+};
+console.log(verficar(lesson3, 'turno', 'noite'));
