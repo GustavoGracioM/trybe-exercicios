@@ -50,3 +50,11 @@ const totalEstudantes = objeto => {
   console.log(result);
 };
 totalEstudantes(allLessons);
+
+// Exercicio 7
+const valorChave = (objeto, posicao) => {
+  const result = Object.values(objeto)[posicao];
+  console.log(result);
+};
+
+valorChave(lesson1, 0);
