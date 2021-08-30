@@ -18,10 +18,16 @@ const lesson3 = {
   turno: 'noite',
 };
 
+// Exercicio 1
 const mudarTurno = (objeto, turno, valor) => {
   objeto.turno = valor;
 }
 mudarTurno(lesson2, 'turno', 'manhã');
 
+// Exercicio 2
 const listarKeys = objeto => console.log(Object.keys(objeto));
 listarKeys(lesson1);
+
+// Exercicio 3
+const tamanhoObjeto = objeto => console.log(Object.keys(objeto).length);
+tamanhoObjeto(lesson3);
