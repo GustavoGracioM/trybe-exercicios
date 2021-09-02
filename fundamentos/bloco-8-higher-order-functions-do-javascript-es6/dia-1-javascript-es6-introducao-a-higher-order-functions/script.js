@@ -4,7 +4,6 @@ const contrantando = (name) => {
   const minusculo = espaco.toLowerCase()
   return {fullname: name, email: `${minusculo}@trybe.com`}
 };
-
 const newEmployees = (callback) => {
   const employees = {
     id1: callback('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
@@ -13,5 +12,10 @@ const newEmployees = (callback) => {
   }
   return employees;
 };
-
 console.log(newEmployees(contrantando));
+
+// Exercicio 2
+const randomNumber = () => Math.floor((Math.random() * 5) + 1);
+const comparar = (num1, num2) => num1 === num2;
+const verfica = (selected, random) => comparar(selected, random) ? 'Parabéns você ganhou' : 'Tente novamente';
+console.log(verfica(3, randomNumber));
