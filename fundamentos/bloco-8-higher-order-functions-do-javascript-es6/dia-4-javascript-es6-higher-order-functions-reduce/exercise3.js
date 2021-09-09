@@ -59,7 +59,7 @@ const books = [
       name: 'H. P. Lovecraft',
       birthYear: 1890,
     },
-    releaseYear: 1928,
+    releaseYear: 1928, 
   },
 ];
 
