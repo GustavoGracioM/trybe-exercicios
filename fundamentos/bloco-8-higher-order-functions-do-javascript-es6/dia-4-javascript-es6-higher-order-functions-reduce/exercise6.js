@@ -11,7 +11,7 @@ function studentAverage() {
             }
   });
   return result;
-}
+} 
 
 const expected = [
   { name: 'Pedro Henrique', average: 7.8 },
