@@ -1,4 +1,4 @@
-const fetchPromise = () => {
+async function fetchPromise() {
   const promise = new Promise((resolve, reject) => {
     const array = Array.from({ length: 10 }, () =>  Math.floor(Math.random() * 50) + 1);
     const sum = array.reduce((acc, curr) => acc + curr, 0);
