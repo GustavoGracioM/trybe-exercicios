@@ -1,6 +1,6 @@
 // loginValidation.test.js
 const { test, expect } = require("@jest/globals");
-const sum = require("./sum.js");
+const sum = require("../src/sum.js");
 
 describe("a função verifyCredentials()", () => {
 
