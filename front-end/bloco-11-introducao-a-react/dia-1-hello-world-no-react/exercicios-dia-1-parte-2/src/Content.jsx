@@ -26,7 +26,8 @@ const conteudos = [
 class Content extends React.Component {
   render() {
     return (
-      <div>
+      <main className='content'>
+        <h2>Conteudos</h2>
         {conteudos.map((cont) => (
           <div className={cont.conteudo}>
             <p>Conteudo: {cont.conteudo}</p>
@@ -34,7 +35,7 @@ class Content extends React.Component {
             <p>Bloco: {cont.bloco}</p>
          </div>
         ))}
-      </div>
+      </main>
     )
   }
 }
