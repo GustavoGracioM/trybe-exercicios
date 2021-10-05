@@ -71,6 +71,8 @@ img {
   main {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
   }
   article {
     font-size: 15px;
