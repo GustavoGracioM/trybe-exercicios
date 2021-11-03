@@ -38,4 +38,17 @@ describe("Exercicios dia 14.2", () => {
     expect(service.randomNumber).toHaveBeenCalledWith(5);
   });
 
+  it('Exercicio 4', () => {
+    service.upperCase = jest.fn().mockImplementation((string) => string.toLowerCase());
+    service.firstLetter = jest.fn().mockImplementation((string) => string.charAt(string.length - 1));
+    service.agroupString = jest.fn().mockImplementation((str1, str2, str3) => `${str1} ${str2} ${str3}`);
+
+    expect(service.upperCase('TRYBE')).toBe('trybe');
+    expect(service.firstLetter('trybe')).toBe('e');
+    expect(service.agroupString('Um', 'Dois', 'Tres')).toBe('Um Dois Tres');
+
+    // service.upperCase.mockRestore();
+    // expect(service.upperCase('trybe')).toBe('TRYBE');
+  })
+
 });
