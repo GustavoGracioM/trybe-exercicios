@@ -51,4 +51,24 @@ describe("Exercicios dia 14.2", () => {
     // expect(service.upperCase('trybe')).toBe('TRYBE');
   })
 
+  it('Exercicio 5', async () => {
+    service.fetchDog = jest.fn();
+    service.fetchDog.mockResolvedValue("request sucess");
+
+    service.fetchDog();
+    expect(service.fetchDog).toHaveBeenCalled();
+    expect(service.fetchDog).toHaveBeenCalledTimes(1);
+    await expect(service.fetchDog()).resolves.toBe("request sucess");
+    expect(service.fetchDog).toHaveBeenCalledTimes(2);
+
+    service.fetchDog.mockReset();
+
+    service.fetchDog.mockRejectedValue("request failed");
+
+    expect(service.fetchDog).toHaveBeenCalledTimes(0);
+    await expect(service.fetchDog()).rejects.toMatch("request failed");
+    expect(service.fetchDog).toHaveBeenCalledTimes(1);
+
+  })
+
 });
