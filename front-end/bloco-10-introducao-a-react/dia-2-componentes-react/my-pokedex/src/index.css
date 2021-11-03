@@ -76,6 +76,7 @@ img {
   }
   article {
     font-size: 15px;
+    flex: 1 1 auto;
     width: 40%;
     margin-right: 20px;
     margin-bottom: 20px;
